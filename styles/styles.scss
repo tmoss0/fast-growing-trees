@@ -1,9 +1,10 @@
 $green: #05963c;
-
+$medium-grey: #e4e4e4; 
+$bold-700: 700;
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Source Sans Pro", sans-serif;
-    font-weight: 700;
+    font-weight: $bold-700;
     margin: 0 0 0.5em;
     line-height: 1.4;
 }
@@ -44,6 +45,9 @@ hr {
     right: 50px;
     z-index: 100;
     cursor: pointer;
+    background-color: $medium-grey;
+    border-radius: 4px;
+    padding: 5px;
     display: none;
 }
 
@@ -68,7 +72,7 @@ hr {
 .yard-planner-button-wrapper {
     span {
         font-size: .9em;
-        font-weight: 700;
+        font-weight: $bold-700;
         margin-left: .5em;
     }
 }
@@ -146,7 +150,7 @@ hr {
     font-size: 14px;
 
     tr:nth-child(2n) {
-        background-color: #e4e4e4;
+        background-color: $medium-grey;
     }
 
     tr td:nth-child(2n) {
@@ -159,6 +163,6 @@ hr {
 
     tr td:nth-child(2n+1) {
         text-align: left;
-        font-weight: 700;
+        font-weight: $bold-700;
     }
 }
