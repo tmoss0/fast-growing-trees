@@ -36,6 +36,19 @@ hr {
   margin: 2rem auto;
 }
 
+#scroll-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 100;
+  cursor: pointer;
+  display: none;
+}
+
+.jump-to-faq li {
+  list-style-type: none;
+}
+
 .tooltip {
   font-size: 12px;
   text-align: center;
@@ -109,7 +122,6 @@ hr {
   padding: 25px;
   border-radius: 4px;
   position: relative;
-  z-index: 2;
 }
 
 .details-box ul {

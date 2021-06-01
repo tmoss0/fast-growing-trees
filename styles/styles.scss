@@ -1,3 +1,6 @@
+$green: #05963c;
+
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 700;
@@ -35,6 +38,21 @@ hr {
     margin: 2rem auto;
 }
 
+#scroll-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 100;
+    cursor: pointer;
+    display: none;
+}
+
+.jump-to-faq {
+    li {
+        list-style-type: none;
+    }
+}
+
 .tooltip {
     font-size: 12px;
     text-align: center;
@@ -57,7 +75,7 @@ hr {
 
 .yard-planner-button-link {
     align-items: center;
-    color: #05963c;
+    color: $green;
     display: flex;
 }
 
@@ -110,7 +128,6 @@ hr {
     padding: 25px;
     border-radius: 4px;
     position: relative;
-    z-index: 2;
 
     ul {
         font-size: 16px;
