@@ -1,6 +1,11 @@
 const scrollToTopButton = document.getElementById("scroll-to-top");
 document.addEventListener("scroll", scrollHandler);
 
+const selectedSize = document.querySelectorAll("size-selection");
+selectedSize.addEventListener("click", sizeSelectionHandler);
+
+const productPrice = document.getElementById("product-price");
+
 // Determine distance scrolled from top of window. Hides button until user scrolls down
 function scrollHandler() {
     let scrollableHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -23,4 +28,7 @@ function scrollToTop() {
         behavior: "smooth"
     });
 }
- 
+
+const sizeSelectionHandler = () => {
+     
+}

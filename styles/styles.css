@@ -36,6 +36,11 @@ hr {
   margin: 2rem auto;
 }
 
+.section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 #scroll-to-top {
   position: fixed;
   bottom: 50px;
@@ -48,14 +53,61 @@ hr {
   display: none;
 }
 
-.jump-to-faq li {
-  list-style-type: none;
+.product-details {
+  margin: 1rem 0;
 }
 
-.tooltip {
-  font-size: 12px;
+#product-price {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.size-radio-selections {
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.size-radio-selections .size-selection {
+  font-size: 16px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #999;
   text-align: center;
-  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 700;
+  padding: 7px 25px;
+  margin: 3px 10px 3px 3px;
+  position: relative;
+  -webkit-transition: all .3 ease-in-out;
+  transition: all .3 ease-in-out;
+}
+
+.size-radio-selections .active {
+  color: #fff;
+  background: #05963c;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border: 1px solid #05963c;
+}
+
+.jump-to-faq ul {
+  padding-left: 0px;
+}
+
+.jump-to-faq li {
+  list-style-type: none;
 }
 
 .cart-panel h4 {
@@ -68,22 +120,11 @@ hr {
   margin-left: .5em;
 }
 
-.yard-planner-button-link {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #05963c;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .care-block {
   display: block;
-  clear: block;
   background-color: #f5f6f7;
-  margin: 1em 0;
-  padding: 1em;
+  padding: 2rem;
+  margin: 0;
 }
 
 .care-block h3 {
@@ -109,14 +150,13 @@ hr {
 }
 
 .solution-icons ul {
-  margin: 20px 0 0;
+  margin: 20px 0;
   padding: 0;
   text-align: center;
 }
 
 .solution-icons ul li {
-  list-style: none;
-  padding: 0 5px;
+  list-style-type: none;
 }
 
 .details-box {
@@ -142,6 +182,7 @@ hr {
 
 .plant-details {
   font-size: 14px;
+  margin: 1rem 0;
 }
 
 .plant-details tr:nth-child(2n) {
@@ -159,5 +200,9 @@ hr {
 .plant-details tr td:nth-child(2n+1) {
   text-align: left;
   font-weight: 700;
+}
+
+.product-faq ul {
+  list-style-type: none;
 }
 /*# sourceMappingURL=styles.css.map */

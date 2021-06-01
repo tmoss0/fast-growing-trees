@@ -1,0 +1,18 @@
+@mixin list-no-bullet {
+    list-style-type: none;
+}
+
+@mixin zero-margin {
+    margin: 0;
+}
+
+@mixin section-margin {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+$green: #05963c;
+$medium-grey: #e4e4e4; 
+
+$bold: 600;
+$boldest: 700;
