@@ -1,3 +1,12 @@
+@charset "UTF-8";
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333333;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
@@ -53,8 +62,35 @@ hr {
   display: none;
 }
 
+.product-name {
+  margin-bottom: 8px;
+}
+
+.product-species {
+  font-weight: 400;
+  font-style: italic;
+  color: #999999;
+  display: block;
+}
+
 .product-details {
   margin: 1rem 0;
+}
+
+.quick-description {
+  margin: 0;
+  padding: 0;
+}
+
+.quick-description li {
+  list-style-type: none;
+}
+
+.quick-description li::before {
+  content: '✓';
+  padding-right: 10px;
+  font-weight: 100;
+  text-rendering: optimizeLegibility;
 }
 
 #product-price {
@@ -65,6 +101,11 @@ hr {
 .item-details {
   list-style-type: none;
   padding-left: 0 !important;
+}
+
+.item-details span {
+  padding-left: 15px;
+  font-weight: 700;
 }
 
 .item-details .delivery-notice::before {
@@ -250,6 +291,6 @@ hr {
 }
 
 .product-faq ul {
-  list-style-type: none;
+  padding-left: 24px;
 }
 /*# sourceMappingURL=styles.css.map */

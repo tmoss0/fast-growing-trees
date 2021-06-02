@@ -1,5 +1,13 @@
+body {
+    font-family: $font-default;
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: $light;
+    color: #333333;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: $font-default;
     font-weight: $boldest;
     margin: 0 0 0.5em;
     line-height: 1.4;
@@ -51,8 +59,35 @@ hr {
     display: none;
 }
 
+.product-name {
+    margin-bottom: 8px;
+}
+
+.product-species {
+    font-weight: 400;
+    font-style: italic;
+    color: #999999;
+    display: block;
+}
+
 .product-details {
     margin: 1rem 0;
+}
+
+.quick-description {   
+    margin: 0;
+    padding: 0;
+
+    li {
+        @include list-no-bullet;
+    }
+
+    li::before {
+        content: '✓';
+        padding-right: 10px;
+        font-weight: 100;
+        text-rendering: optimizeLegibility;
+    }    
 }
 
 #product-price {
@@ -63,6 +98,11 @@ hr {
 .item-details {
     @include list-no-bullet;
     padding-left: 0 !important;
+
+    span {
+        padding-left: 15px;
+        font-weight: $boldest;
+    }
 
     .delivery-notice::before {
         @include custom-detail-icon("https://cdn.shopify.com/s/files/1/0059/8835/2052/files/Shipping.svg?v=1616610731");
@@ -219,6 +259,6 @@ hr {
 
 .product-faq {
     ul {
-        @include list-no-bullet;
+        padding-left: 24px;
     }
 }
