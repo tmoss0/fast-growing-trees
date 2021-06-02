@@ -34,20 +34,16 @@ table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-  background: white;
+  background: #fff;
 }
 
 hr {
-  margin: 50px 0;
+  margin: 2.5rem 0;
 }
 
-.container-lg {
-  margin: 2rem auto;
-}
-
-.section {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 #scroll-to-top {
@@ -96,6 +92,27 @@ hr {
 #product-price {
   font-size: 40px;
   font-weight: 600;
+}
+
+.view-details {
+  color: #099cac;
+  background: #fff;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.button-modal-close {
+  background-color: #7cd1f9;
+  color: #fff;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px 24px;
+  margin: 0;
 }
 
 .item-details {

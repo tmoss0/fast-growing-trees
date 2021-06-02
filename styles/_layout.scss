@@ -32,19 +32,16 @@ table {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    background: white;
+    background: $white;
 }
 
 hr {
-    margin: 50px 0;
+    margin: 2.5rem 0;
 }
 
-.container-lg {
-    margin: 2rem auto;
-}
-
-.section {
-    @include section-margin;
+.container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 #scroll-to-top {
@@ -64,7 +61,7 @@ hr {
 }
 
 .product-species {
-    font-weight: 400;
+    font-weight: $light;
     font-style: italic;
     color: #999999;
     display: block;
@@ -93,6 +90,25 @@ hr {
 #product-price {
     font-size: 40px;
     font-weight: $bold;
+}
+
+.view-details {
+    color: #099cac;
+    background: $white;
+    transition: all 0.15s ease-in-out;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.button-modal-close {
+    background-color: #7cd1f9;
+    color: $white;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    font-size: 14px; 
+    padding: 10px 24px;
+    margin: 0;
 }
 
 .item-details {
@@ -126,7 +142,7 @@ hr {
 
     .size-selection {
         font-size: 16px;
-        background: #fff;
+        background: $white;
         border: 1px solid #ddd;
         border-radius: 4px;
         color: #999;
@@ -141,7 +157,7 @@ hr {
     }
 
     .active {      
-        color: #fff;
+        color: $white;
         background: $green;
         transition: all .3s ease-in-out;
         border: 1px solid $green;
@@ -179,7 +195,7 @@ hr {
     @include zero-margin;
 
     h3 {
-        font-weight: 400;
+        font-weight: $light;
     }
 
     .care-text {
