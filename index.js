@@ -1,9 +1,7 @@
 const scrollToTopButton = document.getElementById("scroll-to-top");
 document.addEventListener("scroll", scrollHandler);
 
-const selectedSize = document.querySelectorAll("size-selection");
-selectedSize.addEventListener("click", sizeSelectionHandler);
-
+const sizeSelection = document.getElementsByClassName("size-selection");
 const productPrice = document.getElementById("product-price");
 
 // Determine distance scrolled from top of window. Hides button until user scrolls down
@@ -29,6 +27,23 @@ function scrollToTop() {
     });
 }
 
-const sizeSelectionHandler = () => {
-     
+
+for(let i in sizeSelection) {
+    sizeSelection[i].addEventListener("click", function() {
+        let current = document.getElementsByClassName("active");
+        
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+
+        if(current[0].classList.contains("small")) {
+            productPrice.innerHTML = "$69.95";
+        }
+        else if(current[0].classList.contains("medium")) {
+            productPrice.innerHTML = "$89.95";
+        }
+        else if(current[0].classList.contains("large")) {
+            productPrice.innerHTML = "$109.95";
+        }
+    });
 }
+

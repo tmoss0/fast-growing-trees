@@ -62,6 +62,44 @@ hr {
   font-weight: 600;
 }
 
+.item-details {
+  list-style-type: none;
+  padding-left: 0 !important;
+}
+
+.item-details .delivery-notice::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: url("https://cdn.shopify.com/s/files/1/0059/8835/2052/files/Shipping.svg?v=1616610731");
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.item-details .can-warranty::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: url("https://cdn.shopify.com/s/files/1/0059/8835/2052/files/Badge.png?v=1616686169");
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.item-details .drop-n-grow::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: url("https://cdn.shopify.com/s/files/1/0059/8835/2052/files/Drop-n-grow.svg?v=1616610714");
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
 .size-radio-selections {
   list-style-type: none;
   padding: 0;

@@ -11,6 +11,17 @@
     margin-bottom: 2rem;
 }
 
+@mixin custom-detail-icon($url) {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: url($url);
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+
 $green: #05963c;
 $medium-grey: #e4e4e4; 
 

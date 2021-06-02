@@ -60,6 +60,23 @@ hr {
     font-weight: $bold;
 }
 
+.item-details {
+    @include list-no-bullet;
+    padding-left: 0 !important;
+
+    .delivery-notice::before {
+        @include custom-detail-icon("https://cdn.shopify.com/s/files/1/0059/8835/2052/files/Shipping.svg?v=1616610731");
+    }
+
+    .can-warranty::before {
+        @include custom-detail-icon("https://cdn.shopify.com/s/files/1/0059/8835/2052/files/Badge.png?v=1616686169");
+    }
+
+    .drop-n-grow::before {
+        @include custom-detail-icon("https://cdn.shopify.com/s/files/1/0059/8835/2052/files/Drop-n-grow.svg?v=1616610714");
+    }
+}
+
 .size-radio-selections {
     @include list-no-bullet;
     padding: 0;
