@@ -5,6 +5,7 @@ body {
   line-height: 1.5;
   font-weight: 400;
   color: #333333;
+  background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -309,5 +310,92 @@ hr {
 
 .product-faq ul {
   padding-left: 24px;
+}
+
+.site-footer {
+  background-color: #f5f6f7;
+  padding: 50px 0;
+}
+
+.site-footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.site-footer .footer-links {
+  padding-left: 0px;
+}
+
+.site-footer .footer-links a {
+  color: #222222;
+  display: block;
+  text-decoration: none;
+}
+
+.site-footer .footer-links a:hover {
+  color: #999999;
+  text-decoration: underline;
+}
+
+.site-footer .icon {
+  display: inline !important;
+  max-height: 20px !important;
+  max-width: 20px !important;
+  vertical-align: middle;
+}
+
+.site-footer .phone-holder {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 4px rgba(130, 130, 130, 0.3);
+          box-shadow: 0px 4px 4px rgba(130, 130, 130, 0.3);
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+}
+
+.site-footer .phone-number-button {
+  color: #fff;
+  background: #005745;
+  border-radius: 4px;
+  font-weight: 700;
+  padding: 5px 12px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0px;
+  font-size: 20px;
+}
+
+.site-footer .social-icons-holder {
+  padding-top: 20px;
+  border-bottom: none;
+  margin: 7px 0px;
+}
+
+.site-footer .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.site-footer .social-icons li {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.site-footer .fab {
+  color: #333333;
+}
+
+.site-footer .fab:hover {
+  color: #999999;
 }
 /*# sourceMappingURL=styles.css.map */

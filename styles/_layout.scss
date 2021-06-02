@@ -4,6 +4,7 @@ body {
     line-height: 1.5;
     font-weight: $light;
     color: #333333;
+    background-color: $white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -276,5 +277,85 @@ hr {
 .product-faq {
     ul {
         padding-left: 24px;
+    }
+}
+
+.site-footer {
+    background-color: rgb(245, 246, 247);
+    padding: 50px 0;
+
+    ul {
+        @include list-no-bullet;
+        padding-left: 0;
+    }
+    
+
+    .footer-links {
+        padding-left: 0px;
+
+        a {
+            color: #222222;
+            display: block;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #999999;
+            text-decoration: underline;
+        }
+    }
+
+    .icon {
+        display: inline !important;
+        max-height: 20px !important;
+        max-width: 20px !important;
+        vertical-align: middle;
+    }
+    
+    .phone-holder {
+        border: 1px solid #ddd;
+        background-color: $white;
+        box-shadow: 0px 4px 4px rgba(130, 130, 130, 0.3);
+        border-radius: 4px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .phone-number-button {
+        color: $white;
+        background: #005745;
+        border-radius: 4px;
+        font-weight: $boldest;
+        padding: 5px 12px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0px;
+        font-size: 20px;
+    }
+
+    .social-icons-holder {
+        padding-top: 20px;
+        border-bottom: none;
+        margin: 7px 0px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+        li {
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    .fab {
+        color: rgb(51, 51, 51);
+    }
+
+    .fab:hover {
+        color: #999999;
     }
 }
